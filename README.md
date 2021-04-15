@@ -1,13 +1,7 @@
 
-# Creative Agency 
+# Freelancer BD
 
-Complete MERN stack website for Software Company who sales different types of services. 
-
-Documentation: https://drive.google.com/file/d/1FSACfI-gxctMZOYU2wGufUyZ-MDXaCAv/view?usp=sharing
-
-## Server Side Code
-
-* https://github.com/taibislamdipu/creative-agency-server
+Complete MERN stack website for Software Company who provides different kinds of freelance services. 
 
 ## Key Features
 
