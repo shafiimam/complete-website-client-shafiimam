@@ -35,7 +35,7 @@ const AllOrder = ({ allOrders }) => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/allOrders')
+        fetch('https://agile-springs-84123.herokuapp.com/allOrders')
             .then(res => res.json())
             .then(data => {
                 const result = data.map(d => ({ ...d, status: 'Pending' }))
@@ -45,7 +45,7 @@ const AllOrder = ({ allOrders }) => {
     }, [])
 
     const change = (e, id) => {
-        fetch(`http://localhost:5000/update/${id}`, {
+        fetch(`https://agile-springs-84123.herokuapp.com/update/${id}`, {
             method: 'PATCH',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ status: e.value })
@@ -132,7 +132,7 @@ const AllOrder = ({ allOrders }) => {
                             {
                                 allOrders.orderImg ? <img className="rounded " style={{ height: '40px' }} src={`data:image/png;base64,${allOrders.orderImg.img}`} alt="" />
                                     :
-                                    <img className="rounded" style={{ height: '40px' }} src={`http://localhost:5000/allOrders/${orderImg.img}`} alt="" />
+                                    <img className="rounded" style={{ height: '40px' }} src={`https://agile-springs-84123.herokuapp.com/allOrders/${orderImg.img}`} alt="" />
                             }
                         </td>
                         <td>{date}</td>

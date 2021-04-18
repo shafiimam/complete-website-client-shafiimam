@@ -20,7 +20,7 @@ const AllServices = ({ allServices }) => {
                         {
                             allServices.image ? <img className="rounded-circle " style={{ height: '150px' }} src={`data:image/png;base64,${allServices.image.img}`} alt="" />
                                 :
-                                <img className="rounded-circle" style={{ height: '40px' }} src={`http://localhost:5000/getServices/${image.img}`} alt="" />
+                                <img className="rounded-circle" style={{ height: '40px' }} src={`https://agile-springs-84123.herokuapp.com/getServices/${image.img}`} alt="" />
                         }
                         <h3 className="text-dark">{title}</h3>
                         <p className="text-secondary">{description}</p>

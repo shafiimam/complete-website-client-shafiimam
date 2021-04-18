@@ -33,7 +33,7 @@ const ServiceList = () => {
     const { name, email, photoURL } = loggedInUser;
 
     useEffect(() => {
-        fetch(`http://localhost:5000/specificOrder?email=${loggedInUser.email}`)
+        fetch(`https://agile-springs-84123.herokuapp.com/specificOrder?email=${loggedInUser.email}`)
             .then(res => res.json())
             .then(data => setOrder(data))
     }, [])

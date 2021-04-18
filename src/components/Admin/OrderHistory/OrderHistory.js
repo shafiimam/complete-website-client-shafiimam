@@ -15,7 +15,7 @@ const OrderHistory = () => {
     const [isAdmin, setIsAdmin] = useState(false);
 
     useEffect(() => {
-        fetch('http://localhost:5000/allOrders')
+        fetch('https://agile-springs-84123.herokuapp.com/allOrders')
             .then(res => res.json())
             .then(data => setOrder(data))
     }, [])
@@ -25,7 +25,7 @@ const OrderHistory = () => {
     }
 
     useEffect(() => {
-        fetch('http://localhost:5000/isAdmin', {
+        fetch('https://agile-springs-84123.herokuapp.com/isAdmin', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email: loggedInUser.email })

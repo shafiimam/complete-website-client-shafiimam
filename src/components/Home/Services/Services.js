@@ -6,7 +6,7 @@ const Services = () => {
     const [services, setServices] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/getServices')
+        fetch('https://agile-springs-84123.herokuapp.com/getServices')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])

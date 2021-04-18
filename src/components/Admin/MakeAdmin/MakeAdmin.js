@@ -17,7 +17,7 @@ const MakeAdmin = () => {
 
     const onSubmit = data => {
 
-        fetch('http://localhost:5000/adminEmail', {
+        fetch('https://agile-springs-84123.herokuapp.com/adminEmail', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(data)
@@ -37,7 +37,7 @@ const MakeAdmin = () => {
     }
 
     useEffect(() => {
-        fetch('http://localhost:5000/isAdmin', {
+        fetch('https://agile-springs-84123.herokuapp.com/isAdmin', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email: loggedInUser.email })

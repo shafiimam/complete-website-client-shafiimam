@@ -33,7 +33,7 @@ const OrderForm = () => {
         console.log('user data', data);
 
         // insert order info to database
-        fetch('http://localhost:5000/addOrder', {
+        fetch('https://agile-springs-84123.herokuapp.com/addOrder', {
             method: 'POST',
             body: formData
         })

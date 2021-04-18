@@ -18,7 +18,7 @@ const AddService = () => {
     const [isAdmin, setIsAdmin] = useState(false);
 
     useEffect(() => {
-        fetch('http://localhost:5000/isAdmin', {
+        fetch('https://agile-springs-84123.herokuapp.com/isAdmin', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email: loggedInUser.email })
@@ -43,7 +43,7 @@ const AddService = () => {
 
         console.log('service data', data);
 
-        fetch('http://localhost:5000/addService', {
+        fetch('https://agile-springs-84123.herokuapp.com/addService', {
             method: 'POST',
             body: formData
         })
