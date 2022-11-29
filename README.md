@@ -29,7 +29,6 @@ Complete MERN stack website for Software Company who provides different kinds of
 
 ## Installation Guide
 
-`gh repo clone taibislamdipu/creative-agency-client`
 
 ## Link of API's
 
